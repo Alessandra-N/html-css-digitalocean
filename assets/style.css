@@ -1,3 +1,40 @@
+/****** CSS general rules ******/
 body {
-    background-color: black;
+    font-family:'Inter-Medium','Helvetica','san-serif';
+}
+
+/****** CSS header ******/
+nav {
+    padding: 10px 0;
+}
+.logo_header {
+    height: 30px;
+}
+nav.row ul li {
+    list-style: none;
+    display: inline-block;
+}
+nav.row ul li a {
+    text-decoration: none;
+    color: #2b3f68;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+nav.row i {
+    font-size: 14px;
+    margin-left: 3px;
+}
+nav.row .col-4 {
+    text-align: right;
+}
+nav.row .container {
+    align-items: center;
+}
+/****** CSS utilities ******/
+.btn {
+    border: 2px solid #2881ff;
+    color: #2881ff;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
