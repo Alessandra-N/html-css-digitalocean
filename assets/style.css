@@ -34,6 +34,7 @@ nav.row .container {
 .menu_bars {
     font-size: 25px;
     text-align: right;
+    display: none;
 }
 /****** /END/ CSS header ******/
 
@@ -44,6 +45,9 @@ nav.row .container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.jumbotron {
+    padding: 5rem 2rem;
 }
 .jumbotitles {
     align-items: center;
@@ -104,6 +108,7 @@ nav.row .container {
 }
 .view_link {
     justify-content: center;
+    font-weight: bold;
     padding-bottom: 2.5rem;
 }
 
@@ -142,7 +147,7 @@ nav.row .container {
 
 
 /****** Media queries ******/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     /*** Header queries ***/
     .jumbotron {
         padding: 5rem 1rem;
@@ -160,10 +165,17 @@ nav.row .container {
     .logo-col {
         padding: 20px 30px;
     }
+    .affiliates>.row {
+        flex-wrap: wrap;
+    }
+    .affiliates>.row>img {
+        width: calc(100% / 2 - 2rem);
+        padding: 2rem;
+    }
     /*** /END/ Header queries ***/
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     /*** Header queries ***/
     .info-col, .supp-col {
         display: none;
@@ -178,24 +190,15 @@ nav.row .container {
         font-size: 45px;
     }
     .jumbotitles>p {
-        font-size: 25px
+        font-size: 25px;
+    }
+    .affiliates>.row{
+        padding: 2rem;
+    }
+    .affiliates img {
+        max-width: 110px;
     }
     /*** /END/ Header queries ***/
 }
-
-@media screen and (min-width: 992px) {
-    /*** Header queries ***/
-    .jumbotron {
-        padding: 5rem 0;
-    }
-    .menu_bars {
-        display: none;
-    }
-    .jumbotron {
-        padding: 5rem 2rem;
-    }
-    /*** /END/ Header queries ***/
-}
-
 
 /****** /END/ media queries ******/
