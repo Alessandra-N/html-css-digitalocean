@@ -82,9 +82,6 @@ nav.row .container {
 /*** /END/ CSS jumbotron section ***/
 
 /*** CSS affiliates section ***/
-.affiliates {
-    background-color: #f3f5f9;
-}
 .affiliates>h3 {
     text-transform: uppercase;
     font-weight:500;
@@ -129,6 +126,35 @@ nav.row .container {
 }
 /*** /END/ CSS deploy section ***/
 
+/*** CSS designed section ***/
+.designed {
+    padding: 5rem 0;
+}
+.slide {
+    align-items: center;
+    justify-content: center;
+}
+.slide>img {
+    width: 500px;
+    padding: 2rem 1rem;
+}
+.bluecircle {
+    height: 10px;
+    width: 10px;
+    background-color: #2881ff;
+    border-radius: 50px;
+}
+.emptycircle {
+    height: 10px;
+    width: 10px;
+    border: 1px solid #2881ff;
+    border-radius: 50px;
+}
+[class*="circle"] {
+    display: inline-block;
+}
+/*** /END/ CSS designed section ***/
+
 
 /****** CSS utilities ******/
 .h_btn {
@@ -169,6 +195,9 @@ nav.row .container {
 }
 .strongblue{
     color: #2881ff;
+}
+.graybg{
+    background-color: #f3f5f9;
 }
 .mg-top-1{
     margin-top: 1rem;
