@@ -56,17 +56,12 @@ nav.row .container {
     font-size: 65px;
     margin-bottom: 20px;
 }
-.jumbotitles>p {
-    line-height: 2rem;
-    color: lightgray;
-}
 .jumboform {
     padding: 1.5rem;
     background-color: white;
     border-radius: 5px;
 }
 .jumboform h2 {
-    text-align: center;
     margin-bottom: 0.5rem;
 }
 .jumboform input {
@@ -81,7 +76,6 @@ nav.row .container {
     margin: 0 25% 0 2%;
 }
 .f-footer {
-    text-align: center;
     padding-bottom: 0.8rem;
     font-size: 14px;
 }
@@ -93,9 +87,7 @@ nav.row .container {
 }
 .affiliates>h3 {
     text-transform: uppercase;
-    text-align: center;
     font-weight:500;
-    color: gray;
     padding: 3rem;
 }
 .affiliates>.row {
@@ -111,8 +103,32 @@ nav.row .container {
     font-weight: bold;
     padding-bottom: 2.5rem;
 }
-
 /*** /END/CSS affiliates section ***/
+
+/*** CSS deploy section ***/
+.deploy h2 {
+    padding: 5rem 0 2rem 0;
+}
+.graylist>ul>li {
+    list-style: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: #5c6a88;
+}
+.grayline {
+    height: 190px;
+    width: 2px;
+    margin: 0 0.5rem 0 5rem;
+    background-color: lightgray;
+}
+.deploy p {
+    margin-bottom: 3rem;
+}
+.deploy h3 {
+    padding: 1rem 0;    
+}
+/*** /END/ CSS deploy section ***/
+
 
 /****** CSS utilities ******/
 .h_btn {
@@ -132,11 +148,24 @@ nav.row .container {
     box-shadow: 1px 1px 0 1px lightgray;
     border-radius: 5px;
 }
+.db_h2_title {
+    font-size: 30px;
+}
+.gray_p {
+    line-height: 2rem;
+    font-size: 20px;
+}
 .white {
     color: white;
 }
 .darkblue {
-    color: #2b3f68;
+    color: #031c4e;
+}
+.gray {
+    color: #5c6a88;
+}
+.light_gray {
+    color: lightgray;
 }
 .strongblue{
     color: #2881ff;
@@ -144,11 +173,25 @@ nav.row .container {
 .mg-top-1{
     margin-top: 1rem;
 }
+.pad-left {
+    padding-left: 2rem;
+}
+.ta_center {
+    text-align: center;
+}
 
 
 /****** Media queries ******/
 @media screen and (max-width: 768px) {
-    /*** Header queries ***/
+    /* nav queries */
+    .info-col, .supp-col {
+        display: none;
+    }
+    .logo-col {
+        padding: 20px 30px;
+    }
+    /* /END/nav queries */
+    /*** Jumbotron queries ***/
     .jumbotron {
         padding: 5rem 1rem;
     }
@@ -159,12 +202,8 @@ nav.row .container {
         font-size: 20px;
         padding-bottom: 1rem;
     }
-    .info-col, .supp-col {
-        display: none;
-    }
-    .logo-col {
-        padding: 20px 30px;
-    }
+    /* /END/ Jumbotron queries */
+    /* affiliates queries */
     .affiliates>.row {
         flex-wrap: wrap;
     }
@@ -172,7 +211,15 @@ nav.row .container {
         width: calc(100% / 2 - 2rem);
         padding: 2rem;
     }
-    /*** /END/ Header queries ***/
+    /* /END/ affiliates queries */
+    /* deploy queries */
+    .deploy>.container {
+        margin: 1rem;
+    }
+    .grayline {
+        margin: 0 0 2rem;
+    }
+    /* /END/ deploy queries */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
