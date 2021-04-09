@@ -40,9 +40,6 @@ nav.row .container {
 
 /****** CSS main ******/
 /*** CSS jumbotron section ***/
-.jumbotron {
-    padding: 5rem 0;
-}
 .jumbosection {
     background-image: url(../assets/img/bg-banner-home.jpg);
     background-size: cover;
@@ -58,6 +55,7 @@ nav.row .container {
 }
 .jumbotitles>p {
     line-height: 2rem;
+    color: lightgray;
 }
 .jumboform {
     padding: 1.5rem;
@@ -65,8 +63,8 @@ nav.row .container {
     border-radius: 5px;
 }
 .jumboform h2 {
-    line-height: 2.5rem;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 .jumboform input {
     width: 100%;
@@ -123,6 +121,16 @@ nav.row .container {
 /****** Media queries ******/
 @media screen and (max-width: 767px) {
     /*** Header queries ***/
+    .jumbotron {
+        padding: 5rem 1rem;
+    }
+    .jumbotitles>h1{
+        font-size: 45px;
+    }
+    .jumbotitles>p {
+        font-size: 20px;
+        padding-bottom: 1rem;
+    }
     .info-col, .supp-col {
         display: none;
     }
@@ -140,13 +148,28 @@ nav.row .container {
     .logo-col {
         padding: 20px 30px;
     }
+    .jumbotron {
+        padding: 5rem 2rem;
+    }
+    .jumbotitles>h1{
+        font-size: 45px;
+    }
+    .jumbotitles>p {
+        font-size: 25px
+    }
     /*** /END/ Header queries ***/
 }
 
 @media screen and (min-width: 992px) {
     /*** Header queries ***/
+    .jumbotron {
+        padding: 5rem 0;
+    }
     .menu_bars {
         display: none;
+    }
+    .jumbotron {
+        padding: 5rem 2rem;
     }
     /*** /END/ Header queries ***/
 }
