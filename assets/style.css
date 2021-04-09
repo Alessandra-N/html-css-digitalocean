@@ -33,7 +33,6 @@ nav.row .container {
 }
 .menu_bars {
     font-size: 25px;
-    color: #2888fd;
     text-align: right;
 }
 /****** /END/ CSS header ******/
@@ -82,9 +81,33 @@ nav.row .container {
     padding-bottom: 0.8rem;
     font-size: 14px;
 }
+/*** /END/ CSS jumbotron section ***/
 
+/*** CSS affiliates section ***/
+.affiliates {
+    background-color: #f3f5f9;
+}
+.affiliates>h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight:500;
+    color: gray;
+    padding: 3rem;
+}
+.affiliates>.row {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+.affiliates a {
+    text-decoration: none;
+}
+.view_link {
+    justify-content: center;
+    padding-bottom: 2.5rem;
+}
 
-/*** /ENE/ CSS jumbotron section ***/
+/*** /END/CSS affiliates section ***/
 
 /****** CSS utilities ******/
 .h_btn {
