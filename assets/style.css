@@ -36,47 +36,120 @@ nav.row .container {
     color: #2888fd;
     text-align: right;
 }
-
-/*** Header queries ***/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .info-col, .supp-col {
-        display: none;
-    }
-    .logo-col {
-        padding: 20px 30px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .menu_bars {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .info-col, .supp-col {
-        display: none;
-    }
-    .logo-col {
-        padding: 20px 30px;
-    }
-}
-
-/*** /END/ header queries ***/
-
 /****** /END/ CSS header ******/
 
 /****** CSS main ******/
 /*** CSS jumbotron section ***/
-
+.jumbotron {
+    padding: 5rem 0;
+}
+.jumbosection {
+    background-image: url(../assets/img/bg-banner-home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.jumbotitles {
+    align-items: center;
+}
+.jumbotitles>h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.jumbotitles>p {
+    line-height: 2rem;
+}
+.jumboform {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 5px;
+}
+.jumboform h2 {
+    line-height: 2.5rem;
+    text-align: center;
+}
+.jumboform input {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+.jumboform img {
+    height: 20px;
+    margin: 0 25% 0 2%;
+}
+.f-footer {
+    text-align: center;
+    padding-bottom: 0.8rem;
+    font-size: 14px;
+}
 
 
 /*** /ENE/ CSS jumbotron section ***/
 
 /****** CSS utilities ******/
-.btn {
+.h_btn {
     border: 2px solid #2881ff;
     color: #2881ff;
     padding: 5px 15px;
     border-radius: 5px;
 }
+.c_btn {
+    background-color: #579aff;
+    padding: 0.5rem 0;
+    justify-content: center;
+    border-radius: 5px;
+}
+.s_btn {
+    padding: 0.5rem 0;
+    box-shadow: 1px 1px 0 1px lightgray;
+    border-radius: 5px;
+}
+.white {
+    color: white;
+}
+.darkblue {
+    color: #2b3f68;
+}
+.strongblue{
+    color: #2881ff;
+}
+.mg-top-1{
+    margin-top: 1rem;
+}
+
+
+/****** Media queries ******/
+@media screen and (max-width: 767px) {
+    /*** Header queries ***/
+    .info-col, .supp-col {
+        display: none;
+    }
+    .logo-col {
+        padding: 20px 30px;
+    }
+    /*** /END/ Header queries ***/
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /*** Header queries ***/
+    .info-col, .supp-col {
+        display: none;
+    }
+    .logo-col {
+        padding: 20px 30px;
+    }
+    /*** /END/ Header queries ***/
+}
+
+@media screen and (min-width: 992px) {
+    /*** Header queries ***/
+    .menu_bars {
+        display: none;
+    }
+    /*** /END/ Header queries ***/
+}
+
+
+/****** /END/ media queries ******/
