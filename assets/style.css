@@ -21,7 +21,7 @@ nav.row ul li a {
     font-weight: bold;
     margin-left: 15px;
 }
-nav.row i {
+.info-col, .supp-col i {
     font-size: 14px;
     margin-left: 3px;
 }
@@ -31,6 +31,39 @@ nav.row .col-4 {
 nav.row .container {
     align-items: center;
 }
+.menu_bars {
+    font-size: 25px;
+    color: #2888fd;
+    text-align: right;
+}
+
+/*** Header queries ***/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .info-col, .supp-col {
+        display: none;
+    }
+    .logo-col {
+        padding: 20px 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .menu_bars {
+        display: none;
+    }
+}
+
+/*** /END/ header queries ***/
+
+/****** /END/ CSS header ******/
+
+/****** CSS main ******/
+/*** CSS jumbotron section ***/
+
+
+
+/*** /ENE/ CSS jumbotron section ***/
+
 /****** CSS utilities ******/
 .btn {
     border: 2px solid #2881ff;
