@@ -53,6 +53,15 @@ nav.row .container {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .info-col, .supp-col {
+        display: none;
+    }
+    .logo-col {
+        padding: 20px 30px;
+    }
+}
+
 /*** /END/ header queries ***/
 
 /****** /END/ CSS header ******/
