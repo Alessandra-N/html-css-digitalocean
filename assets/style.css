@@ -127,9 +127,6 @@ nav.row .container {
 /*** /END/ CSS deploy section ***/
 
 /*** CSS designed section ***/
-.designed {
-    padding: 5rem 0;
-}
 .slide {
     align-items: center;
     justify-content: center;
@@ -205,6 +202,9 @@ nav.row .container {
 .pad-left {
     padding-left: 2rem;
 }
+.pad-top {
+    padding-top: 5rem;
+}
 .ta_center {
     text-align: center;
 }
@@ -253,7 +253,8 @@ nav.row .container {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /*** Header queries ***/
-    .info-col, .supp-col {
+    .info-col, 
+    .supp-col {
         display: none;
     }
     .logo-col {
