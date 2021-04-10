@@ -28,7 +28,7 @@ nav.row ul li a {
 nav.row .col-4 {
     text-align: right;
 }
-nav.row .container {
+nav.row>.container {
     align-items: center;
 }
 .menu_bars {
@@ -118,15 +118,15 @@ nav.row .container {
     margin: 0 0.5rem 0 5rem;
     background-color: lightgray;
 }
-.deploy p {
-    margin-bottom: 3rem;
-}
 .deploy h3 {
     padding: 1rem 0;    
 }
 /*** /END/ CSS deploy section ***/
 
 /*** CSS designed section ***/
+.designed>.container>.db_h2_title {
+    padding: 5rem 0 2rem 0;
+}
 .slide {
     align-items: center;
     justify-content: center;
@@ -149,6 +149,7 @@ nav.row .container {
 }
 [class*="circle"] {
     display: inline-block;
+    margin: 1rem 0 3rem 0;
 }
 /*** /END/ CSS designed section ***/
 
@@ -202,11 +203,11 @@ nav.row .container {
 .pad-left {
     padding-left: 2rem;
 }
-.pad-top {
-    padding-top: 5rem;
-}
 .ta_center {
     text-align: center;
+}
+.bold {
+    font-weight: bold;
 }
 
 
@@ -218,6 +219,9 @@ nav.row .container {
     }
     .logo-col {
         padding: 20px 30px;
+    }
+    .menu_bars {
+        display: block;
     }
     /* /END/nav queries */
     /*** Jumbotron queries ***/
@@ -241,6 +245,7 @@ nav.row .container {
         padding: 2rem;
     }
     /* /END/ affiliates queries */
+
     /* deploy queries */
     .deploy>.container {
         margin: 1rem;
@@ -249,6 +254,15 @@ nav.row .container {
         margin: 0 0 2rem;
     }
     /* /END/ deploy queries */
+
+    /* designed queries */
+    [class*="circle"] {
+        margin: 6rem 0 3rem 0;
+    }
+    .slide {
+        margin: 8rem 0 0 0;
+    }
+    /* /END/ designed queries */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -275,7 +289,18 @@ nav.row .container {
     .affiliates img {
         max-width: 110px;
     }
+    .menu_bars {
+        display: block;
+    }
     /*** /END/ Header queries ***/
+        /* designed queries */
+        [class*="circle"] {
+            margin: 6rem 0 3rem 0;
+        }
+        .slide {
+            margin: 8rem 0 0 0;
+        }
+        /* /END/ designed queries */
 }
 
 /****** /END/ media queries ******/
