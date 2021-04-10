@@ -3,6 +3,21 @@ body {
     font-family:'Inter-Medium','Helvetica','san-serif';
 }
 
+.deploy, 
+.features,
+.jumbotron,
+.affiliates,
+.designed {
+    padding: 5rem 0;
+}
+
+.dep_p {
+    margin: 1rem 0;
+}
+a {
+    text-decoration: none;
+}
+
 /****** CSS header ******/
 nav {
     padding: 10px 0;
@@ -15,7 +30,6 @@ nav.row ul li {
     display: inline-block;
 }
 nav.row ul li a {
-    text-decoration: none;
     color: #2b3f68;
     font-size: 16px;
     font-weight: bold;
@@ -45,9 +59,6 @@ nav.row>.container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-.jumbotron {
-    padding: 5rem 2rem;
 }
 .jumbotitles {
     align-items: center;
@@ -85,26 +96,22 @@ nav.row>.container {
 .affiliates>h3 {
     text-transform: uppercase;
     font-weight:500;
-    padding: 3rem;
+    padding: 0 3rem 3rem;
 }
 .affiliates>.row {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 4rem;
 }
-.affiliates a {
-    text-decoration: none;
-}
 .view_link {
     justify-content: center;
     font-weight: bold;
-    padding-bottom: 2.5rem;
 }
 /*** /END/CSS affiliates section ***/
 
 /*** CSS deploy section ***/
-.deploy h2 {
-    padding: 5rem 0 2rem 0;
+.deploy>.titles>p {
+    padding: 1rem 0 3rem;
 }
 .graylist>ul>li {
     list-style: none;
@@ -118,14 +125,11 @@ nav.row>.container {
     margin: 0 0.5rem 0 5rem;
     background-color: lightgray;
 }
-.deploy h3 {
-    padding: 1rem 0;    
-}
 /*** /END/ CSS deploy section ***/
 
 /*** CSS designed section ***/
-.designed>.container>.db_h2_title {
-    padding: 5rem 0 2rem 0;
+.designed>.container>p {
+    padding: 0 0 1rem 0;
 }
 .slide {
     align-items: center;
@@ -149,9 +153,18 @@ nav.row>.container {
 }
 [class*="circle"] {
     display: inline-block;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 0;
 }
 /*** /END/ CSS designed section ***/
+
+/*** CSS features section ***/
+.f_right_card {
+    padding-left: 2rem;
+}
+.f_left_card{
+    padding-right: 2rem;
+}
+/*** /END/ CSS features section ***/
 
 
 /****** CSS utilities ******/
@@ -174,6 +187,7 @@ nav.row>.container {
 }
 .db_h2_title {
     font-size: 30px;
+    margin-bottom: 2rem;
 }
 .gray_p {
     line-height: 2rem;
@@ -202,6 +216,9 @@ nav.row>.container {
 }
 .pad-left {
     padding-left: 2rem;
+}
+.pad_top_bot1 {
+    padding: 1rem 0;
 }
 .ta_center {
     text-align: center;
@@ -248,7 +265,7 @@ nav.row>.container {
 
     /* deploy queries */
     .deploy>.container {
-        margin: 1rem;
+        margin: 3rem;
     }
     .grayline {
         margin: 0 0 2rem;
@@ -263,6 +280,15 @@ nav.row>.container {
         margin: 8rem 0 0 0;
     }
     /* /END/ designed queries */
+    /* features queries */
+    .features {
+        padding: 5rem 2rem;
+    }
+    .f_right_card,
+    .f_right_card {
+        padding: 0;
+    }
+    /* /END/ features queries */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -293,14 +319,27 @@ nav.row>.container {
         display: block;
     }
     /*** /END/ Header queries ***/
-        /* designed queries */
+
+    /* Deploy queries */
+    .deploy {
+        padding: 2rem;
+    }
+    /* /END/ Deploy queries */
+
+    /* designed queries */
         [class*="circle"] {
             margin: 6rem 0 3rem 0;
         }
         .slide {
             margin: 8rem 0 0 0;
         }
-        /* /END/ designed queries */
+    /* /END/ designed queries */
+
+    /* features queries */
+    .features {
+        padding: 5rem 2rem;
+    }
+    /* /END/ features queries */
 }
 
 /****** /END/ media queries ******/
