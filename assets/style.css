@@ -7,15 +7,21 @@ body {
 .features,
 .jumbotron,
 .affiliates,
-.designed {
+.designed,
+.service,
+.development {
     padding: 5rem 0;
 }
-
 .dep_p {
     margin: 1rem 0;
 }
 a {
     text-decoration: none;
+}
+
+i {
+    font-size: 30px;
+    color: #031c4e;
 }
 
 /****** CSS header ******/
@@ -166,6 +172,13 @@ nav.row>.container {
 }
 /*** /END/ CSS features section ***/
 
+/*** CSS service section ***/
+.service{
+    background: linear-gradient(186deg, rgba(0,71,197,1) 0%, rgba(0,34,157,1) 100%);
+}
+
+/*** /END/ CSS service section ***/
+
 
 /****** CSS utilities ******/
 .h_btn {
@@ -208,6 +221,9 @@ nav.row>.container {
 .strongblue{
     color: #2881ff;
 }
+.acqua {
+    color: #00c7cf;
+}
 .graybg{
     background-color: #f3f5f9;
 }
@@ -225,6 +241,9 @@ nav.row>.container {
 }
 .bold {
     font-weight: bold;
+}
+.bd_bot {
+    border-bottom: 1px solid white;
 }
 
 
@@ -288,7 +307,20 @@ nav.row>.container {
     .f_right_card {
         padding: 0;
     }
+    .features>.container>.col-xs-12 {
+        padding-top: 2rem;
+    }
     /* /END/ features queries */
+
+    /* service queries */
+    .service .col-xs-12 {
+        margin-bottom: 3rem;
+    }
+    .service {
+        padding: 5rem 2rem;
+    }
+    /* /END/ service queries */
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -340,6 +372,24 @@ nav.row>.container {
         padding: 5rem 2rem;
     }
     /* /END/ features queries */
+
+    /* service queries */
+
+    .service .col-md-12 {
+        margin-bottom: 3rem;
+    }
+    .service {
+        padding: 5rem 2rem;
+    }
+    /* /END/ service queries */
+
+    /* development queries */
+    .development>.des_titles {
+        padding: 0;
+    }
+    /* /END/ development queries */
+
+
 }
 
 /****** /END/ media queries ******/
