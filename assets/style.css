@@ -164,6 +164,11 @@ nav.row>.container {
 /*** /END/ CSS designed section ***/
 
 /*** CSS features section ***/
+.features [class*="col-"],
+.features a {
+    display: flex;
+    flex-wrap: nowrap;
+}
 .f_right_card {
     padding-left: 2rem;
 }
@@ -176,8 +181,29 @@ nav.row>.container {
 .service{
     background: linear-gradient(186deg, rgba(0,71,197,1) 0%, rgba(0,34,157,1) 100%);
 }
-
 /*** /END/ CSS service section ***/
+
+/*** CSS development section ***/
+.development>.container {
+    align-items: center;
+    justify-content: center;
+}
+.rocker_card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 3rem 0;
+    margin: 0 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.rocker_card img {
+    height: 50px;
+}
+.dev_sign {
+    font-size: 14px;
+}
+
+/*** /END/ CSS development section ***/
 
 
 /****** CSS utilities ******/
@@ -236,6 +262,9 @@ nav.row>.container {
 .pad_top_bot1 {
     padding: 1rem 0;
 }
+.pad-bot1 {
+    padding-bottom: 1rem;
+}
 .ta_center {
     text-align: center;
 }
@@ -245,7 +274,6 @@ nav.row>.container {
 .bd_bot {
     border-bottom: 1px solid white;
 }
-
 
 /****** Media queries ******/
 @media screen and (max-width: 768px) {
@@ -292,7 +320,7 @@ nav.row>.container {
     /* /END/ deploy queries */
 
     /* designed queries */
-    [class*="circle"] {
+    .designed [class*="circle"] {
         margin: 6rem 0 3rem 0;
     }
     .slide {
@@ -320,7 +348,6 @@ nav.row>.container {
         padding: 5rem 2rem;
     }
     /* /END/ service queries */
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -359,7 +386,7 @@ nav.row>.container {
     /* /END/ Deploy queries */
 
     /* designed queries */
-        [class*="circle"] {
+        .designed [class*="circle"] {
             margin: 6rem 0 3rem 0;
         }
         .slide {
@@ -374,12 +401,11 @@ nav.row>.container {
     /* /END/ features queries */
 
     /* service queries */
-
     .service .col-md-12 {
         margin-bottom: 3rem;
     }
     .service {
-        padding: 5rem 2rem;
+        padding: 5rem 1rem;
     }
     /* /END/ service queries */
 
