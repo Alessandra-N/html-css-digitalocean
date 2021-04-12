@@ -14,16 +14,15 @@ i {
     font-size: 30px;
     color: #031c4e;
 }
+li {
+    list-style: none;
+}
 
 /****** CSS header ******/
-nav {
-    padding: 10px 0;
-}
 .logo_header {
     height: 30px;
 }
 nav ul li {
-    list-style: none;
     display: inline-block;
 }
 nav ul li a {
@@ -56,8 +55,6 @@ nav ul li a {
 }
 .jumboform {
     padding: 1.5rem;
-    background-color: white;
-    border-radius: 5px;
 }
 .jumboform h2 {
     margin-bottom: 0.5rem;
@@ -66,7 +63,6 @@ nav ul li a {
     width: 100%;
     height: 2.5rem;
     border: 1px solid lightgray;
-    border-radius: 5px;
     margin: 0.5rem 0;
 }
 .jumboform img {
@@ -88,10 +84,6 @@ nav ul li a {
     justify-content: space-between;
     padding-bottom: 4rem;
 }
-.view_link {
-    justify-content: center;
-    font-weight: bold;
-}
 /*** /END/CSS affiliates section ***/
 
 /*** CSS deploy section ***/
@@ -99,13 +91,12 @@ nav ul li a {
     padding: 1rem 0 3rem;
 }
 .graylist>ul>li {
-    list-style: none;
     padding: 0.5rem;
     font-size: 20px;
     color: #5c6a88;
 }
 .grayline {
-    height: 190px;
+    height: 200px;
     width: 2px;
     margin: 0 0.5rem 0 5rem;
     background-color: lightgray;
@@ -116,24 +107,21 @@ nav ul li a {
 .designed>.container>p {
     padding: 0 0 1rem 0;
 }
-.slide {
-    justify-content: center;
-}
 .slide>img {
     width: 500px;
     padding: 2rem 1rem;
 }
-.bluecircle {
-    height: 10px;
-    width: 10px;
-    background-color: #2881ff;
-    border-radius: 50px;
-}
+.bluecircle,
 .emptycircle {
     height: 10px;
     width: 10px;
-    border: 1px solid #2881ff;
     border-radius: 50px;
+}
+.bluecircle {
+    background-color: #2881ff;
+}
+.emptycircle {
+    border: 1px solid #2881ff;
 }
 [class*="circle"] {
     display: inline-block;
@@ -146,36 +134,38 @@ nav ul li a {
 .features a {
     flex-wrap: nowrap;
 }
-.f_right_card {
-    padding-left: 2rem;
-}
 .f_left_card{
     padding-right: 2rem;
 }
 /*** /END/ CSS features section ***/
 
 /*** CSS service section ***/
+.service_left {
+    padding-right: 1rem;
+}
+.service_right {
+    padding-right: 1rem;
+}
 /*** /END/ CSS service section ***/
 
 /*** CSS development section ***/
-.development>.container {
-    justify-content: center;
-}
 .rocker_card {
-    background-color: white;
     border-radius: 10px;
     padding: 3rem 0;
-    margin: 0 2rem;
-    justify-content: center;
     flex-wrap: wrap;
 }
 .rocker_card img {
     height: 50px;
 }
 /*** /END/ CSS development section ***/
+
 /*** CSS Get started section ***/
 /*** /END/ CSS Get started section ***/
+
 /*** CSS footer section ***/
+footer {
+    position: relative;
+}
 .footer_rights,
 .footer_list>ul>li>a {
     font-size: 14px;
@@ -187,37 +177,71 @@ nav ul li a {
     margin-right: 0.5rem;
     font-size: 24px;
 }
-.footer_list ul {
-    list-style: none;
-}
 .footer_list>ul>li {
     line-height: 1.5rem;
 }
+.shark {
+    position: absolute;
+    right: 2rem;
+    bottom: 2.5rem;
+}
+.sharkbox>img {
+    height: 80px;
+    background-color: #2881ff;
+}
+.redcircle {
+    padding: 0.2rem 0.5rem;
+    background-color: red;
+    color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+.fumetto::after {
+    content: "";
+}
+.sm_square {
+
+}
+.redcircle {
+    position: absolute;
+    bottom: 65px;
+    left: 65px;
+}
+.bubble {
+    width: 350px;
+    height: 80px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.bubble::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    background: white;
+    transform: rotate(45deg);
+}
 /*** CSS /END/ footer section ***/
 
-
-
 /****** CSS utilities ******/
+[class*="btn"] {
+    border-radius: 5px;
+}
 .h_btn {
     border: 2px solid #2881ff;
     color: #2881ff;
     padding: 5px 15px;
-    border-radius: 5px;
 }
 .c_btn {
     background-color: #579aff;
-    padding: 0.5rem 0;
-    justify-content: center;
-    border-radius: 5px;
 }
 .s_btn {
-    padding: 0.5rem 0;
     box-shadow: 1px 1px 0 1px lightgray;
-    border-radius: 5px;
 }
 .w_btn {
-    background-color: white;
-    border-radius: 5px;
     padding: 0.5rem 1rem;
 }
 .db_h2_title {
@@ -252,6 +276,9 @@ nav ul li a {
 .graybg{
     background-color: #f3f5f9;
 }
+.whitebg {
+    background-color: white;
+}
 .g_blue_bg {
     background: linear-gradient(186deg, rgba(0,71,197,1) 0%, rgba(0,34,157,1) 100%);
 }
@@ -270,6 +297,9 @@ nav ul li a {
 .pad_top_bot1 {
     padding: 1rem 0;
 }
+.pad_top_bot_05 {
+    padding: 0.5rem 0;
+}
 .pad-bot1 {
     padding-bottom: 1rem;
 }
@@ -282,6 +312,9 @@ nav ul li a {
 .ai_center {
     align-items: center;
 }
+.jc_center {
+    justify-content: center;
+}
 .bold {
     font-weight: bold;
 }
@@ -291,15 +324,20 @@ nav ul li a {
 .fs_14 {
  font-size: 14px;
 }
-
+.br_5 {
+    border-radius: 5px;;
+}
+.relative {
+    position: relative
+}
 /****** Media queries ******/
 @media screen and (max-width: 768px) {
     /* nav queries */
+    header {
+        padding: 1rem 2rem;
+    }
     .info-col, .supp-col {
         display: none;
-    }
-    .logo-col {
-        padding: 20px 30px;
     }
     .menu_bars {
         display: block;
@@ -348,7 +386,6 @@ nav ul li a {
     .features {
         padding: 5rem 2rem;
     }
-    .f_right_card,
     .f_right_card {
         padding: 0;
     }
@@ -371,22 +408,39 @@ nav ul li a {
         display: none;
     }
     /* /END/ development queries */
-    footer {
-        padding: 3rem 1rem;
+
+    /* footer queries */
+    footer>.container {
+        padding: 0 1rem;
     }
     footer .col-xs-12 {
         padding-bottom: 1rem;
     }
+    .footer_list>ul>li>a {
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .shark {
+        position: absolute;
+        left: 2rem;
+        bottom: 10rem;
+    }
+    .bubble {
+        position: absolute;
+        left: -1rem;
+        bottom: -10rem;
+    }
+    /* /END/ footer queries */
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /*** Header queries ***/
+    header {
+        padding: 1rem 2rem;
+    }
     .info-col, 
     .supp-col {
         display: none;
-    }
-    .logo-col {
-        padding: 20px 30px;
     }
     .jumbotron {
         padding: 5rem 2rem;
@@ -445,7 +499,7 @@ nav ul li a {
     /* /END/ development queries */
 
     /* footer queries */
-    footer {
+    footer>.container {
         padding: 5rem 2rem;
     }
     footer .col-4 {
@@ -454,8 +508,16 @@ nav ul li a {
     footer .col-md-12 {
         padding-bottom: 1rem;
     }
+    .shark {
+        position: absolute;
+        left: 2rem;
+        bottom: 10rem;
+    }
+    .bubble {
+        position: absolute;
+        left: -1rem;
+        bottom: -10rem;
+    }
     /* /END/ footer queries */
-
 }
-
 /****** /END/ media queries ******/
