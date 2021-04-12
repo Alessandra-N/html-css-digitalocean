@@ -9,7 +9,8 @@ body {
 .affiliates,
 .designed,
 .service,
-.development {
+.development,
+.get_started {
     padding: 5rem 0;
 }
 .dep_p {
@@ -31,24 +32,24 @@ nav {
 .logo_header {
     height: 30px;
 }
-nav.row ul li {
+nav ul li {
     list-style: none;
     display: inline-block;
 }
-nav.row ul li a {
+nav ul li a {
     color: #2b3f68;
     font-size: 16px;
     font-weight: bold;
     margin-left: 15px;
 }
-.info-col, .supp-col i {
+.info-col i, .supp-col i {
     font-size: 14px;
     margin-left: 3px;
 }
-nav.row .col-4 {
+nav .col-4 {
     text-align: right;
 }
-nav.row>.container {
+nav>.container {
     align-items: center;
 }
 .menu_bars {
@@ -166,7 +167,6 @@ nav.row>.container {
 /*** CSS features section ***/
 .features [class*="col-"],
 .features a {
-    display: flex;
     flex-wrap: nowrap;
 }
 .f_right_card {
@@ -178,9 +178,6 @@ nav.row>.container {
 /*** /END/ CSS features section ***/
 
 /*** CSS service section ***/
-.service{
-    background: linear-gradient(186deg, rgba(0,71,197,1) 0%, rgba(0,34,157,1) 100%);
-}
 /*** /END/ CSS service section ***/
 
 /*** CSS development section ***/
@@ -202,8 +199,10 @@ nav.row>.container {
 .dev_sign {
     font-size: 14px;
 }
-
 /*** /END/ CSS development section ***/
+/*** CSS Get started section ***/
+
+/*** /END/ CSS Get started section ***/
 
 
 /****** CSS utilities ******/
@@ -223,6 +222,11 @@ nav.row>.container {
     padding: 0.5rem 0;
     box-shadow: 1px 1px 0 1px lightgray;
     border-radius: 5px;
+}
+.w_btn {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
 }
 .db_h2_title {
     font-size: 30px;
@@ -252,6 +256,9 @@ nav.row>.container {
 }
 .graybg{
     background-color: #f3f5f9;
+}
+.g_blue_bg {
+    background: linear-gradient(186deg, rgba(0,71,197,1) 0%, rgba(0,34,157,1) 100%);
 }
 .mg-top-1{
     margin-top: 1rem;
@@ -348,6 +355,13 @@ nav.row>.container {
         padding: 5rem 2rem;
     }
     /* /END/ service queries */
+
+    /* development queries */
+    .development i {
+        display: none;
+    }
+    /* /END/ development queries */
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
