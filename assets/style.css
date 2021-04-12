@@ -415,14 +415,14 @@ footer {
         line-height: 2rem;
     }
     .shark {
-        position: absolute;
-        left: 2rem;
+        position: fixed;
+        left: 1rem;
         bottom: 10rem;
     }
     .bubble {
         position: absolute;
         left: -1rem;
-        bottom: -10rem;
+        bottom: -9rem;
     }
     .bubble::after {
         content: "";
@@ -513,14 +513,14 @@ footer {
         padding-bottom: 1rem;
     }
     .shark {
-        position: absolute;
+        position: fixed;
         left: 2rem;
         bottom: 10rem;
     }
     .bubble {
         position: absolute;
         left: -1rem;
-        bottom: -10rem;
+        bottom: -9rem;
     }
     .bubble::after {
         content: "";
