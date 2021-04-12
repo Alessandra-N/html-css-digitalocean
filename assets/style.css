@@ -197,12 +197,6 @@ footer {
     border-radius: 50%;
     align-self: flex-start;
 }
-.fumetto::after {
-    content: "";
-}
-.sm_square {
-
-}
 .redcircle {
     position: absolute;
     bottom: 65px;
@@ -430,6 +424,16 @@ footer {
         left: -1rem;
         bottom: -10rem;
     }
+    .bubble::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background: white;
+        transform: rotate(45deg);
+    }
     /* /END/ footer queries */
 }
 
@@ -517,6 +521,16 @@ footer {
         position: absolute;
         left: -1rem;
         bottom: -10rem;
+    }
+    .bubble::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background: white;
+        transform: rotate(45deg);
     }
     /* /END/ footer queries */
 }
